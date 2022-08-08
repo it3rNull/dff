@@ -12,7 +12,7 @@ begin
     process(d,en,rst,clk)
     begin
         if(rst = '1') then
-            data <= '0'
+            data <= '0';
         elsif(en = '1' and clk'event ) then
             data <= d;
         end if;
