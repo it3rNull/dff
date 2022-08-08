@@ -13,7 +13,7 @@ begin
     begin
         if(rst = '1') then
             data <= '0';
-        elsif(en = '1' and clk'event ) then
+        elsif(en = '1' and clk = '0' and clk'event ) then
             data <= d;
         end if;
     end process;
