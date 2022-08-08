@@ -18,7 +18,7 @@ begin
         end if;
     end process;
 
-    q <= data
+    q <= data;
 
 end architecture arch_dff;
 
